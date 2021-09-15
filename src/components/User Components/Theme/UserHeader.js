@@ -11,8 +11,8 @@ const Wallet = ({ dispatch, dashboard, back_path, title }) => {
   let path = useHistory();
 
   return (
-    <div className="bg-blue-500 md:px-8 flex items-center py-3 md:rounded-t-xl sticky top-0 md:top-2 z-10">
-      <p className="text-white mx-2 text-base md:text-2xl  font-semibold flex items-center capitalize">
+    <div className="bg-blue-500 md:px-8 flex items-center py-3 md:rounded-t-xl">
+      <p className="text-white mx-2 text-base md:text-2xl font-semibold flex items-center capitalize">
         {back_path ? (
           <button onClick={path.goBack}>
             <FaLongArrowAltLeft className="w-8 h-8 mr-2 text-white" />
