@@ -3,7 +3,7 @@ import { IoGameController, IoPersonSharp } from "react-icons/io5";
 
 function UserFooter() {
   return (
-    <div className="bg-blue-500 px-10 flex items-center justify-around py-2 md:rounded-b-xl sticky bottom-0 md:bottom-2">
+    <div className="bg-blue-500 px-10 flex items-center justify-between py-2 md:rounded-b-xl sticky bottom-0 md:bottom-2">
       <Link to="/refer">
         <div className="flex-col text-center">
           <img

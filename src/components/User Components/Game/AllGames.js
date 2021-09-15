@@ -39,7 +39,7 @@ const AllGame = ({ dispatch, loading, games }) => {
                         </span>
                       </div>
                     </div>
-                    <div className=" bg-gray-100 py-2 font-semibold rounded-b-md shadow-2xl">
+                    <div className=" bg-gray-100 py-2 font-semibold rounded-b-md shadow-2xl overflow-scroll scrollbar-none px-2">
                       {game.game_name}
                     </div>
                   </div>
