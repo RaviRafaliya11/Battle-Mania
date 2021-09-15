@@ -16,14 +16,14 @@ function UserFooter() {
       </Link>
 
       <Link to="/play">
-        <div className="flex-col text-center">
-          <IoGameController className="w-6 h-6 mx-auto text-white" />
-          <p className="text-white text-sm md:text-xl">Play</p>
+        <div className="flex-col text-center text-white hover:text-black">
+          <IoGameController className="w-6 h-6 mx-auto " />
+          <p className=" text-sm md:text-xl">Play</p>
         </div>
       </Link>
 
       <Link to="/account">
-        <div className="flex-col text-center text-black">
+        <div className="flex-col text-center text-black hover:text-white">
           <IoPersonSharp className="w-6 h-6 mx-auto" />
           <p className="text-sm md:text-xl">Account</p>
         </div>
