@@ -29,12 +29,12 @@ const UserMatches = ({ dispatch, user_matches }) => {
 
   useEffect(() => {
     dispatch(Fetch_User_Matches(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <UserMainTheme back_path={true} title="My Matches">
-      <Tabs>
-        <TabList className="flex bg-blue-500 justify-evenly font-semibold">
+      <Tabs forceRenderTabPanel defaultIndex={1}>
+        <TabList className="flex bg-blue-500 justify-evenly font-semibold sticky top-0 z-10">
           <Tab className="w-full text-center p-3 mt-2">ONGOING</Tab>
           <Tab className="w-full text-center p-3 mt-2">UPCOMING</Tab>
           <Tab className="w-full text-center p-3 mt-2">RESULTS</Tab>

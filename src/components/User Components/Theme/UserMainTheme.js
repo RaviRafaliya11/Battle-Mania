@@ -7,6 +7,8 @@ function UserMainTheme(props) {
       className="h-screen"
       style={{
         backgroundImage: `url('https://demowebapp.thebattlemania.com/uploads/page_banner/202001220705541667563654__Main.jpg')`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       <div className="flex flex-col h-screen mx-auto max-w-xl rounded-xl">

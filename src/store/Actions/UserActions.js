@@ -16,7 +16,6 @@ export function Fetch_User_Profile() {
       type: GET_USER_PROFILE_SUCCESS,
       payload: data.my_profile,
     };
-
     dispatch(return_response);
   };
 }
@@ -34,7 +33,6 @@ export function Fetch_Wallet_Transaction() {
       type: GET_Wallet_Transaction_SUCCESS,
       payload: data.transaction,
     };
-
     dispatch(return_response);
   };
 }
@@ -55,7 +53,6 @@ export function Fetch_Dashboard() {
       type: GET_DASHBOARD_SUCCESS,
       payload: data,
     };
-
     dispatch(return_response);
   };
 }
@@ -97,7 +94,6 @@ export function Fetch_Statistics() {
       type: GET_STATISTICS_SUCCESS,
       payload: data.my_statistics,
     };
-
     dispatch(return_response);
   };
 }
@@ -118,7 +114,6 @@ export function Fetch_Referral() {
       type: GET_REFERRAL_SUCCESS,
       payload: data,
     };
-
     dispatch(return_response);
   };
 }
@@ -139,7 +134,6 @@ export function Fetch_User_Matches() {
       type: USER_MATCHES,
       payload: data.my_match,
     };
-
     dispatch(return_response);
   };
 }

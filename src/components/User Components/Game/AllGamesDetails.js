@@ -24,11 +24,11 @@ const All_Games_Details = ({
   const location = useLocation();
 
   useEffect(() => {
-    dispatch(Fetch_Ongoing_Games(id));
-  }, []);
-
-  function upcoming() {
     dispatch(Fetch_Upcoming_Games(id));
+  }, [dispatch, id]);
+
+  function ongoing() {
+    dispatch(Fetch_Ongoing_Games(id));
     console.log(upcoming_games);
   }
 
@@ -37,12 +37,12 @@ const All_Games_Details = ({
   }
   return (
     <UserMainTheme back_path={true} title={location.state.title}>
-      <Tabs>
-        <TabList className="flex bg-blue-500 justify-evenly font-semibold">
-          <Tab className="w-full text-center p-3 mt-2">ONGOING</Tab>
-          <Tab onClick={upcoming} className="w-full text-center p-3 mt-2">
-            UPCOMING
+      <Tabs forceRenderTabPanel defaultIndex={1}>
+        <TabList className="flex bg-blue-500 justify-evenly font-semibold sticky top-0 z-10 ">
+          <Tab onClick={ongoing} className="w-full text-center p-3 mt-2">
+            ONGOING
           </Tab>
+          <Tab className="w-full text-center p-3 mt-2">UPCOMING</Tab>
           <Tab onClick={result} className="w-full text-center p-3 mt-2">
             RESULTS
           </Tab>

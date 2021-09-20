@@ -16,7 +16,7 @@ const Match_Detail = ({ dispatch, singlegame, participants }) => {
 
   useEffect(() => {
     dispatch(Fetch_Single_Game(id));
-  }, []);
+  }, [dispatch, id]);
 
   function fetchparticipants() {
     dispatch(Fetch_Participants(id));

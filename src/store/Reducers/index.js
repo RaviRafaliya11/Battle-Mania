@@ -34,6 +34,7 @@ import {
   Change_Password,
   Register_Reducer,
   Payment_Method_Reducer,
+  Update_Profile_Reducer,
 } from "./ServicesReducers";
 
 const rootReducer = combineReducers({
@@ -68,6 +69,7 @@ const rootReducer = combineReducers({
   join_match: Join_Match_Reducer,
   user_matches: User_Match_Reducer,
   payment_method: Payment_Method_Reducer,
+  update_profile_data: Update_Profile_Reducer,
 });
 
 export default rootReducer;

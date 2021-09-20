@@ -32,7 +32,7 @@ const Select_Position = ({ dispatch, loading, joined_players }) => {
 
   useEffect(() => {
     dispatch(Fetch_Joined_Players(id));
-  }, [checkSelection]);
+  }, [checkSelection, id, dispatch]);
 
   console.log(location);
 

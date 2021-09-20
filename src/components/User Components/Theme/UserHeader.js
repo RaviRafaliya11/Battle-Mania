@@ -9,7 +9,7 @@ const Wallet = ({ dispatch, dashboard, back_path, title }) => {
     dispatch(Fetch_Dashboard());
   }, [dispatch]);
   let path = useHistory();
-
+  console.log(dashboard);
   return (
     <div className="bg-blue-500 md:px-8 flex items-center py-3 md:rounded-t-xl">
       <p className="text-white mx-2 text-base md:text-2xl font-semibold flex items-center capitalize">

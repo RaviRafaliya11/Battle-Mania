@@ -79,7 +79,7 @@ function UpcomingTab({ data }) {
                 <div className="mr-1">
                   <p className=" text-xs text-black">{data.no_of_player}/100</p>
 
-                  <div className="w-56 bg-gray-400 mt-1 rounded-full">
+                  <div className="w-40 md:w-56 bg-gray-400 mt-1 rounded-full">
                     <div
                       className="bg-blue-500 text-xs text-center h-2 rounded-full text-white"
                       style={{ width: `${data.no_of_player}%` }}

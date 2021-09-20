@@ -5,6 +5,7 @@ export const initialState = {
   change_password_data: [],
   register_data: [],
   payment_method: [],
+  update_profile_data: [],
   loading: true,
 };
 
@@ -32,6 +33,16 @@ export const Register_Reducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.REGISTER_SUCCESS:
       return { register_data: action.payload, loading: false };
+
+    default:
+      return state;
+  }
+};
+
+export const Update_Profile_Reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case actions.UPDATE_PROFILE:
+      return { update_profile_data: action.payload, loading: false };
 
     default:
       return state;

@@ -16,7 +16,7 @@ const ResultTabDetail = ({
 
   useEffect(() => {
     dispatch(Fetch_Single_Result(id));
-  }, []);
+  }, [dispatch, id]);
 
   return (
     <UserMainTheme back_path={true} title={location.state.title}>

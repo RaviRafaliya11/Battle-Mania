@@ -38,8 +38,8 @@ const Play = ({ dispatch, slider, announcement }) => {
   return (
     <div>
       <UserMainTheme title="All Games">
+        <div className="h-1" />
         <Link to="/announcement">
-          <div className="h-1" />
           <div className="m-2 flex items-center h-14 rounded bg-orange-900 text-white">
             <div className="flex-grow">
               <p className="ml-3 text-sm py-1 font-semibold">Announcement:</p>

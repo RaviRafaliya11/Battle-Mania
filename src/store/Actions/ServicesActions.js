@@ -88,6 +88,32 @@ export function Register_Function(register_params) {
   };
 }
 
+// ____________________________________________________ Update Profile ____________________________________________________
+
+export const UPDATE_PROFILE = "UPDATE_PROFILE";
+
+export function Update_Profile(update_profile_parms) {
+  var return_response = {};
+  return async (dispatch) => {
+    const response = await fetch(`${BASE_URL}/update_myprofile`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(update_profile_parms),
+    });
+
+    const data = await response.json();
+    return_response = {
+      type: UPDATE_PROFILE,
+      payload: data,
+    };
+
+    dispatch(return_response);
+  };
+}
+
 export const GET_PAYMENT_METHOD = "GET_PAYMENT_METHOD";
 
 export function Fetch_Payment_Method() {

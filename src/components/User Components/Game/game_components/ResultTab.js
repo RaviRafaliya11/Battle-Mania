@@ -5,7 +5,10 @@ function ResultTab({ data }) {
     <div className="m-3">
       {data.map((data) => {
         return (
-          <div className="shadow-xl border border-gray-400 my-3 rounded bg-white">
+          <div
+            key={data.m_id}
+            className="shadow-xl border border-gray-400 my-3 rounded bg-white"
+          >
             <Link
               to={{
                 pathname: `/game_result/${data.m_id}`,
