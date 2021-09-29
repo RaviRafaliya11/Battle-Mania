@@ -8,6 +8,15 @@
   .group:hover .group-hover\:block {
     display: block !important;
   }
+  .dashboard-section {
+    @apply flex items-center py-2.5 border-b border-solid border-gray-300;
+  }
+  .dashboard-section-icon {
+    @apply w-8 h-8 ml-8 text-green-900;
+  }
+  .dashboard-right-icon {
+    @apply ml-auto mr-5 w-7 h-7 text-gray-800;
+  }
 }
 
 :root {

@@ -86,25 +86,21 @@ function ResultTab({ data }) {
                   </a>
                 </div>
                 <div className="w-full">
-                  {data.join_status ? (
-                    <button className="flex items-center w-full bg-green-400 py-1 justify-center rounded text-white">
-                      <img
-                        alt="content"
-                        className="w-5 h-5 mr-1"
-                        src="https://demowebapp.thebattlemania.com/application/views/themes/front/assest/img/coin.png"
-                      />
-                      <span> {data.entry_fee} JOINED</span>
-                    </button>
-                  ) : (
-                    <button className="flex items-center w-full bg-green-400 py-1 justify-center rounded text-red-500">
-                      <img
-                        alt="content"
-                        className="w-5 h-5 mr-1"
-                        src="https://demowebapp.thebattlemania.com/application/views/themes/front/assest/img/coin.png"
-                      />
-                      <span> {data.entry_fee} MISSED</span>
-                    </button>
-                  )}
+                  <button
+                    className={`flex items-center w-full bg-green-400 py-1 justify-center rounded  ${
+                      data.join_status ? `text-white` : `text-red-500`
+                    } `}
+                  >
+                    <img
+                      alt="content"
+                      className="w-5 h-5 mr-1"
+                      src="https://demowebapp.thebattlemania.com/application/views/themes/front/assest/img/coin.png"
+                    />
+                    <span className="text-xs md:text-base">
+                      {data.entry_fee}
+                      {data.join_status ? "JOINED" : " MISSED"}
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>

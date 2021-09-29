@@ -121,155 +121,152 @@ const Account = ({ dispatch, dashboard }) => {
         <div className="mx-3 my-5 bg-white rounded-md py-2 md:text-xl">
           <Link to="/profile">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaUserCircle className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaUserCircle className="dashboard-section-icon" />
                 <p className="ml-5">My Profile</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/wallet">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaGoogleWallet className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaGoogleWallet className="dashboard-section-icon" />
 
                 <p className="ml-5">My Wallet</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/my_matches">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaGamepad className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaGamepad className="dashboard-section-icon" />
 
                 <p className="ml-5">My Matches</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/my_orders">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaShoppingBag className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaShoppingBag className="dashboard-section-icon" />
 
                 <p className="ml-5">My Orders</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/my_statistics">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaChartBar className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaChartBar className="dashboard-section-icon" />
 
                 <p className="ml-5">My Statistics</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/my_referrals">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaUsers className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaUsers className="dashboard-section-icon" />
 
                 <p className="ml-5">My Referrals</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/announcement">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaBullhorn className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaBullhorn className="dashboard-section-icon" />
 
                 <p className="ml-5">My Announcement</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/top_players">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaTrophy className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaTrophy className="dashboard-section-icon" />
 
                 <p className="ml-5">Top Players</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="leaderboard">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaChartArea className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaChartArea className="dashboard-section-icon" />
 
                 <p className="ml-5">Leader Board</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/app_tutorial">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaInfoCircle className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaInfoCircle className="dashboard-section-icon" />
 
                 <p className="ml-5">App Tutorial</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/about_us">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaQuestionCircle className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaQuestionCircle className="dashboard-section-icon" />
 
                 <p className="ml-5">About Us</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/customer_support">
             <Slide right>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaHeadset className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaHeadset className="dashboard-section-icon" />
 
                 <p className="ml-5">Customer Support </p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Link to="/terms_condition">
             <Slide left>
-              <div className="flex items-center py-2.5 border-b border-solid border-gray-300">
-                <FaFileAlt className="w-8 h-8 ml-8 text-green-900" />
+              <div className="dashboard-section">
+                <FaFileAlt className="dashboard-section-icon" />
 
                 <p className="ml-5">Terms & Conditions</p>
-                <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+                <FaAngleRight className="dashboard-right-icon" />
               </div>
             </Slide>
           </Link>
 
           <Slide right>
-            <div
-              onClick={logout}
-              className="flex items-center py-2.5 border-b border-solid border-gray-300 cursor-pointer"
-            >
-              <FaPowerOff className="w-8 h-8 ml-8 text-green-900" />
+            <div onClick={logout} className="dashboard-section cursor-pointer">
+              <FaPowerOff className="dashboard-section-icon" />
 
               <p className="ml-5">Log Out</p>
-              <FaAngleRight className="ml-auto mr-5 w-7 h-7 text-gray-800" />
+              <FaAngleRight className="dashboard-right-icon" />
             </div>
           </Slide>
         </div>

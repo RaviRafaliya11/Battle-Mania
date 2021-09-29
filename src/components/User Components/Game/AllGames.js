@@ -3,7 +3,7 @@ import { React, useEffect } from "react";
 import { Fetch_Games } from "../../../store/Actions/GameAction";
 import { Link } from "react-router-dom";
 import Loader from "./../../../utils/Loader";
-import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 const AllGame = ({ dispatch, loading, games }) => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const AllGame = ({ dispatch, loading, games }) => {
         ) : (
           <div>
             {games.map((game) => (
-              <Slide right key={game.game_id}>
+              <Fade right key={game.game_id}>
                 <Link
                   to={{
                     pathname: `/matches/${game.game_id}`,
@@ -44,7 +44,7 @@ const AllGame = ({ dispatch, loading, games }) => {
                     </div>
                   </div>
                 </Link>
-              </Slide>
+              </Fade>
             ))}
           </div>
         )}
