@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# BattleMania: The Ultimate eSports Tournament Organizer 🎮🏆
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+**BattleMania** is a complete package designed for eSports tournament organizers. It includes an Android application for participants, a powerful admin panel for management, and a dedicated website. Organize tournaments for popular games like PUBG, FreeFire, COD, Fortnite, and more with ease.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+* **Tournament Creation & Management:** Create, schedule, and manage multiple eSports tournaments.
+* **Game Support:** Supports a wide range of popular mobile eSports titles (PUBG, FreeFire, COD, Fortnite, PUBG Lite, etc.).
+* **Android Tournament App:** A dedicated mobile application for players to register, join tournaments, view brackets, and see results.
+* **Admin Panel:** A comprehensive web-based dashboard for organizers to:
+    * Manage users and teams.
+    * Update match scores and outcomes.
+    * Oversee tournament progress.
+    * Distribute prizes.
+* **Tournament Website:** A public-facing website to showcase ongoing and upcoming tournaments, leaderboards, and news.
+* **User Registration:** Players can register and create profiles.
+* **Real-time Updates:** (If applicable) Keep players informed with live score and bracket updates.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+*(You'll need to fill this in with your actual stack, which likely includes a mix of mobile, backend, and web technologies)*
 
-### `npm test`
+* **Mobile App (Android):** Java / Kotlin / React Native / Flutter
+* **Backend:** Node.js / Python / PHP (with a framework like Express, Django, Laravel)
+* **Database:** MongoDB / MySQL / PostgreSQL
+* **Web (Admin Panel/Website):** React / Next.js / Angular / Vue.js
+* **Real-time:** Socket.io (for live updates)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Installation
 
-### `npm run build`
+*(This section will be more complex due to multiple components. Outline steps for each part.)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **1. Backend (API & Database)**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  **Clone the backend repository:**
+    ```bash
+    git clone [https://github.com/RaviRafaliya11/battlemania-backend.git](https://github.com/RaviRafaliya11/battlemania-backend.git) # Adjust if your backend is a separate repo
+    cd battlemania-backend
+    ```
+2.  **Install dependencies:** `npm install` (or `pip install -r requirements.txt` etc.)
+3.  **Database Setup:** Configure your database (e.g., create schema, run migrations).
+4.  **Environment Variables:** Create a `.env` file with database credentials, API keys, etc.
+5.  **Run the backend server:** `npm start` (or `python app.py` etc.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **2. Android Application**
 
-### `npm run eject`
+1.  **Clone the Android app repository:**
+    ```bash
+    git clone [https://github.com/RaviRafaliya11/battlemania-android-app.git](https://github.com/RaviRafaliya11/battlemania-android-app.git) # Adjust if your app is a separate repo
+    cd battlemania-android-app
+    ```
+2.  **Open in Android Studio:** Open the project in Android Studio.
+3.  **Configure API Endpoints:** Update the base URL for your backend API.
+4.  **Build and Run:** Build and run the app on an emulator or physical device.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### **3. Admin Panel / Website**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Clone the web repository:**
+    ```bash
+    git clone [https://github.com/RaviRafaliya11/battlemania-web.git](https://github.com/RaviRafaliya11/battlemania-web.git) # Adjust if your web is a separate repo
+    cd battlemania-web
+    ```
+2.  **Install dependencies:** `npm install` (or `yarn install`)
+3.  **Environment Variables:** Configure backend API URL and any authentication secrets.
+4.  **Run the web application:** `npm run dev` (or `npm start`)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
